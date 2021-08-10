@@ -11,45 +11,26 @@ for ($i=1;$i<=$L;$i++){
         //echo $j;
             print "*";
     }
-    if( $D == 2 or $D == 7){
         $D = $D * 2; 
-    }else{
-        if($D == 14){
-            $D = $D + 7;
-        }else{
-            $D = $D + 2;
-        }
-    }
     
 }
-if ($D == 12 && $L == 5) {
-    for ($i=9;$i>=$L;$i--){
-        //echo $i;
-           for ($j=8;$j>=$D;$j--){
-               //echo $j;
-                   print "*";
-           }
-           if($D == 12){
-               $D = $D - 11;
-           }else{
-                $D = $D +2;
-           }
-           print "<BR>\n ";
+// print '<br>';
+// echo $L;
+// print '<br>';
+// echo$D;
+ print '<br>';
+ $D = $D / 4 -1;
+for ($i=$L;$i>=2;$i--){
+     //echo $i;
+    // print '<br>';
+    // echo$D;
+       for ($j=0;$j<=$D;$j++){
+           //echo $j;
+               print "*";
        }
-}else{
-    for ($i=5;$i>=$L;$i--){
-        //echo $i;
-           for ($j=14;$j>=$D;$j--){
-               //echo $j;
-                   print "*";
-           }
-           if($D == 23){
-               $D = $D - 22;
-           }else{
-                $D = $D + 7;
-           }
-           print "<BR>\n ";
-       }
+        $D = $D / 2;
+       print "<BR>\n ";
+      // echo $D;
 }
 ?> 
 </body>
